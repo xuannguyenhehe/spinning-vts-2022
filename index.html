@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/pressure.min.js"></script>
+    <script src="js/IosSelector.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/meter.css" />
+    <link rel="stylesheet" href="css/ios.css" />
+  </head>
+  <body style="position: relative">
+    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+
+    <img
+      src="img/theocach.png"
+      style="position: absolute; left: 0px; width: 35em"
+    />
+    <img
+      src="img/logo.png"
+      style="position: absolute; right: 7em; width: 65em"
+    />
+
+    <div class="col-md-10 col-md-offset-2 rollbox">
+      <div class="date-selector">
+        <div id="loadout"></div>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-md-offset-5">
+      <button id="roll" class="btn btn-primary form-control">Roll</button>
+    </div>
+
+    <div id="power-bar" class="col-md-6 col-md-offset-3 meter power-color">
+      <span></span>
+    </div>
+
+    <img
+      src="img/firework.png"
+      style="position: absolute; bottom: 0px; left: 0px; width: 35em"
+    />
+    <img
+      src="img/gift.png"
+      style="position: absolute; bottom: 0px; right: 0px; z-index: 100000000"
+    />
+    <script src="js/firework.js"></script>
+  </body>
+</html>

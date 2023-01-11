@@ -1,0 +1,163 @@
+body {
+  /* background: linear-gradient(to right, #24fe41, #fdfc47); */
+  /* background: linear-gradient(to right, #cb2d3e, #ef473a); */
+  /* background: linear-gradient(to right, #74ebd5, #acb6e5); */
+  background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+  /* background: linear-gradient(to right, #ee9ca7, #ffdde1); */
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  /* background: linear-gradient(to right, #fdfc47, #24fe41); */
+  color: white;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.rollbox::before {
+  top: 14rem;
+  font-size: 0.7em;
+  position: absolute;
+  z-index: 2000;
+  content: "►";
+  color: red;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000,
+    1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000,
+    2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000,
+    -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+.rollbox {
+  font-size: 5em;
+  background: transparent;
+  margin-top: 4.5em;
+  height: 5em;
+  overflow: hidden;
+  /* clip: rect(0px,60px,200px,0px); */
+  position: relative;
+  padding: 0;
+  z-index: -100;
+}
+
+.rollbox > table {
+  width: auto;
+  height: 5em;
+  margin: 0;
+  margin-left: 0.5em;
+  padding: 0;
+}
+
+#loadout {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.roller {
+  position: relative;
+  display: block;
+  height: 1em;
+  color: black;
+  line-height: 2em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 100%;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow-x: visible;
+  /* text-align: center; */
+}
+
+.roller div {
+  display: block;
+  line-height: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* background:-webkit-radial-gradient(white, black); */
+  /* 	-webkit-box-shadow: inset 0px 0px 30px 25px rgba(0,0,0,0.45);
+	-moz-box-shadow: inset 0px 0px 30px 25px rgba(0,0,0,0.45);
+	box-shadow: inset 0px 0px 30px 10px rgba(0,0,0,0.45);*/
+  /*	border: 1px solid black; */
+}
+
+.inputbox {
+  visibility: hidden;
+}
+
+#log {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+#log span {
+  font-size: 2em;
+  font-weight: bold;
+  color: #57b3f9;
+}
+
+#roll {
+  margin-top: 30px;
+}
+
+tr,
+table,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: red;
+  font-size: 3.5em;
+  font-weight: bold;
+  /* 	text-shadow: 1px 1px 0 #000,
+		-1px 1px 0 #000,
+		1px -1px 0 #000,
+		-1px -1px 0 #000,
+		0px 1px 0 #000,
+		0px -1px 0 #000,
+		-1px 0px 0 #000,
+		1px 0px 0 #000,
+		2px 2px 0 #000,
+		-2px 2px 0 #000,
+		2px -2px 0 #000,
+		-2px -2px 0 #000,
+		0px 2px 0 #000,
+		0px -2px 0 #000,
+		-2px 0px 0 #000,
+		2px 0px 0 #000,
+		1px 2px 0 #000,
+		-1px 2px 0 #000,
+		1px -2px 0 #000,
+		-1px -2px 0 #000,
+		2px 1px 0 #000,
+		-2px 1px 0 #000,
+		2px -1px 0 #000,
+		-2px -1px 0 #000;
+ */
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
